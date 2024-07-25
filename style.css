@@ -75,7 +75,7 @@ mark::selection {
 
 .main-presentation {
     width: 100%;
-    max-width: 850px;
+    max-width: 900px;
     min-width: 430px;
     margin-inline: auto;
     display: flex;
@@ -115,6 +115,8 @@ section {
 
 
 .event-container {
+    max-width: 1200px;
+    margin-inline: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -198,7 +200,11 @@ path {
     text-decoration: unset;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1048px) {
+    .event-text {
+        text-align: center;
+    }
+
     .event-container {
         flex-direction: column;
     }

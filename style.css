@@ -20,7 +20,7 @@ h1, h2, h3, h4, h5, h6 {
 
 header {
     background-color: #eee;
-    padding: 8px 24px;
+    padding: 12px 24px;
     position: fixed;
     top: 0;
     width: 100%;
@@ -74,13 +74,12 @@ mark::selection {
 }
 
 .main-presentation {
-    width: 80%;
+    width: 100%;
     max-width: 850px;
     min-width: 430px;
     margin-inline: auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     justify-content: center;
 }
 
@@ -93,7 +92,7 @@ mark::selection {
 }
 
 .main-presentation-beer {
-    margin: 5rem 8rem;
+    margin: 2rem 8rem;
 }
 
 section {
@@ -139,17 +138,37 @@ h3 {
 }
 
 footer {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer__social {
     height: 5rem;
-    background-color: black;
+    background-color: #231f1f;
     color: #fbb90d;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 3rem;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+
+}
+
+.footer__info {
+    height: 1.6rem;
+    font-family: "Open Sans";
+    font-size: 12px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    color: #cb9815;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 24px;
 }
 
 svg {
@@ -158,6 +177,25 @@ svg {
 
 path {
     fill: #fbb90d;
+}
+
+.social-link {
+    transform: scale(1);
+    transition-duration: .5s;
+}
+
+.social-link:hover {
+    transform: scale(1.4);
+    transition-duration: .5s;
+}
+
+.statute-external-icon {
+    height: 10px;
+}
+
+.statute-link {
+    color: #cb9815;
+    text-decoration: unset;
 }
 
 @media (max-width: 1024px) {

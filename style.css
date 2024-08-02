@@ -99,6 +99,28 @@ section {
     margin-bottom: 4rem;
 }
 
+.event.past {
+    background-color: white;
+    filter: grayscale(0.9) opacity(0.6);
+
+}
+
+.event.past::before {
+    isolation: isolate;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 100px;
+    content: 'TERMINATO';
+    background-color: black;
+    color: white;
+    font-size: 70px;
+    font-weight: bold;
+    display: grid;
+    place-items: center;
+    box-shadow: 0 4px 5px black;
+}
+
 .event-title {
     font-size: 64px;
     text-align: center;

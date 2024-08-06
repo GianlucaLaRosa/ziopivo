@@ -1,7 +1,12 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    scrollbar-gutter: both-edges;
 }
 
 p::selection,
@@ -20,14 +25,48 @@ h1, h2, h3, h4, h5, h6 {
 
 header {
     background-color: #eee;
-    padding: 12px 24px;
+    padding-block: 24px;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 10;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    margin-right: 24px;
+}
+
+.navigation-menu {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    flex-wrap: nowrap;
+}
+
+.navigation-menu__item{
+    padding: 18px 30px;
+    list-style-type: none;
+    border-radius: 4px;
+}
+
+.navigation-menu__item__link:hover {
+    color: #e1a60c;
+}
+
+.navigation-menu__item__link {
+    color: black;
+    font-family: "Grandstander", cursive;
+    font-weight: bold;
+    font-size: 24px;
+    text-decoration: none;
 }
 
 .header-logo {
+    margin-left: 24px;
     height: 7rem;
     cursor: pointer;
 }

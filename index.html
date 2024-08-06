@@ -12,9 +12,19 @@
 <body>
 <header>
     <img src="./assets/logo.png" class="header-logo" onclick="scrollToTop()">
+    <nav>
+        <ul class="navigation-menu">
+           <li class="navigation-menu__item">
+               <a href="#presentation" class="navigation-menu__item__link">Chi Siamo</a>
+           </li>
+            <li class="navigation-menu__item">
+                <a href="#event" class="navigation-menu__item__link">Eventi</a>
+            </li>
+        </ul>
+    </nav>
 </header>
 <main id="top">
-    <div class="main-title__container">
+    <div class="main-title__container" id="presentation">
         <h1 class="main-title">ZIO PIVO</h1>
     </div>
 <section class="main-presentation">
@@ -28,6 +38,17 @@
     </div>
     <img src="assets/beer.png" class="main-presentation-beer"/>
 </section>
+    <section id="event">
+        <h2 class="event-title">Il primo evento di cultura birra a Trieste
+        </h2>
+        <div class="event-container">
+            <h3 class="event-text">Conosciamoci al 25esimo compleanno <br/> del birrificio <br/> Citt&agrave; Vecchia, <br/>
+                SABATO 27 LUGLIO, <br/> dalle ore 18:00
+            </h3>
+            <div class="event-image"></div>
+        </div>
+
+    </section>
     <section class="event past">
         <h2 class="event-title">TOUR BIRRIFICIO</h2>
         <div class="event-container">

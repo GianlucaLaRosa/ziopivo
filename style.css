@@ -1,9 +1,14 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 html {
     scroll-behavior: smooth;
 }
 
 body {
-    box-sizing: border-box;
     padding: 0;
     margin: 0;
     scrollbar-gutter: both-edges;
@@ -45,6 +50,7 @@ nav {
     flex-direction: row;
     gap: 12px;
     flex-wrap: nowrap;
+    display: none;
 }
 
 .navigation-menu__item{
@@ -141,7 +147,7 @@ section {
 .event.past {
     background-color: white;
     filter: grayscale(0.9) opacity(0.6);
-
+    display: none;
 }
 
 .event.past::before {
@@ -193,6 +199,7 @@ h3 {
 
 .event-text {
     padding-inline: 2rem;
+    margin-top: 0;
 }
 
 .event-text::selection {
@@ -259,6 +266,52 @@ path {
 .statute-link {
     color: #cb9815;
     text-decoration: unset;
+}
+
+
+
+/* CRAFT BEER EVENT */
+
+.bud-event {
+    background-color: #fbb90d;
+    box-shadow: 0 6px 12px rgba(73, 56, 15, 0.68);
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-bottom: 24px;
+    padding-inline: 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10rem;
+}
+
+.bud-event__title {
+    text-align: center;
+    font-size: clamp(1rem, -0.4286rem + 4.5714vw, 3rem);
+    line-height: clamp(2.5rem, 0.7143rem + 5.7143vw, 5rem);
+    margin-bottom: 1rem;
+}
+
+.bud-event__image {
+    width: 100%;
+}
+
+.bud-event__desc {
+    text-align: center;
+    font-size: clamp(0.75rem, -0.8571rem + 5.1429vw, 2rem);
+    width: 100%;
+    margin-top: 0;
+}
+
+@media (max-width: 992px) {
+    header {
+        padding-block: 12px;
+    }
+
+    .header-logo {
+        margin-left: 24px;
+        height:4rem;
+    }
 }
 
 @media (max-width: 1048px) {

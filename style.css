@@ -273,15 +273,10 @@ path {
 /* CRAFT BEER EVENT */
 
 .bud-event {
-    background-color: #fbb90d;
+    width:900px;
     box-shadow: 0 6px 12px rgba(73, 56, 15, 0.68);
     max-width: 1200px;
     margin-inline: auto;
-    padding-bottom: 24px;
-    padding-inline: 36px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     margin-bottom: 10rem;
 }
 
@@ -311,6 +306,10 @@ path {
     .header-logo {
         margin-left: 24px;
         height:4rem;
+    }
+
+    .bud-event {
+        width: 80vw;
     }
 }
 
